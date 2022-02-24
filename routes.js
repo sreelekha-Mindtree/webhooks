@@ -15,7 +15,7 @@ router.post("/okta-webhooks-endpoint", function(req, res) {
 });
 
 router.post("/stripe-webhooks-endpoint", bodyParser.raw({type: 'application/json'}), function(req, res) {
-  console.log(req.body);
+  console.log(req.body,"stripe-webhooks-endpoint");
   res.send("Stripe Successfully received Webhook request");
 });
 
