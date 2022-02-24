@@ -5,8 +5,9 @@ const bodyParser = require('body-parser');
 const router = express.Router();
 
 router.get("/", function(req, res) {
-  res.send("Welcome to the Webhooks API");
+  res.send("Welcome to the Webhooks Server");
 });
+
 
 router.post("/okta-webhooks-endpoint", function(req, res) {
   console.log(req.body);
